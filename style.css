@@ -1,0 +1,197 @@
+/* BRAND COLORS */
+:root {
+    --navy: #0a192f;
+    --dark-navy: #020c1b;
+    --gold: #ffd700;
+}
+
+/* NAV LINKS PREMIUM HOVER */
+.navbar .nav-link {
+    position: relative;
+    color: #ccc;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+    color: var(--gold);
+}
+
+/* underline animation */
+.navbar .nav-link::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: var(--gold);
+    left: 0;
+    bottom: -5px;
+    transition: width 0.3s ease;
+}
+
+.navbar .nav-link:hover::after {
+    width: 100%;
+}
+
+.btn-gold {
+    background-color: var(--gold);
+    border-color: var(--gold);
+    color: var(--dark-navy);
+    transition: all 0.3s ease;
+}
+
+/* PREMIUM HOVER */
+.btn-gold:hover {
+    background-color: rgba(255, 215, 0, 0.85);
+    color: var(--dark-navy);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(255, 215, 0, 0.3);
+}
+.signup-glow {
+    background-color: var(--gold);
+    color: var(--dark-navy);
+    border: none;
+    padding: 5px 25px; 
+    font-weight: bold;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.bg-navy {
+    background-color: var(--navy) !important;
+}
+
+.bg-dark-navy {
+    background-color: var(--dark-navy) !important;
+}
+
+.text-gold {
+    color: var(--gold) !important;
+}
+
+.text-navy {
+    color: var(--dark-navy) !important;
+}
+
+.border-gold-subtle {
+    border-color: rgba(255, 215, 0, 0.15) !important;
+}
+
+/* HERO */
+.hero {
+    height: 85vh;
+background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+
+        url('https://images.unsplash.com/photo-1560448204-e02f11c3d0e2') center/cover;
+}
+
+/* BUTTONS */
+/* BUTTON BASE */
+.btn-gold {
+    background: linear-gradient(135deg, #ffd700, #e6c200);
+    border: none;
+    color: #020c1b;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+/* BUTTON HOVER (PREMIUM EFFECT) */
+.btn-gold:hover {
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 15px 35px rgba(255, 215, 0, 0.4);
+    color: #020c1b;
+}
+
+/* SUBTLE SHINE EFFECT */
+.btn-gold::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.5), transparent);
+    transition: 0.5s;
+}
+
+.btn-gold:hover::before {
+    left: 100%;
+}
+.signup-upgrade {
+    background-color: var(--gold);
+    color: var(--dark-navy);
+    border: none;
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+/* THE PREMIUM SIGNUP GLOW */
+.signup-glow:hover {
+    background-color: rgba(255, 215, 0, 0.1) !important;
+    color: #fff !important;
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+    transform: translateY(-2px);
+}
+
+/* CARDS & STATS */
+/* GLASSMORPHIC PROPERTY CARDS */
+.card {
+    background: rgba(255, 255, 255, 0.05) !important;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+
+/* CARD IMAGE */
+.card img {
+    height: 200px;
+    object-fit: cover;
+    transition: 0.4s ease;
+}
+
+/* CARD HOVER */
+.card:hover {
+    transform: translateY(-12px) scale(1.02);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+}
+
+/* IMAGE ZOOM EFFECT */
+.card:hover img {
+    transform: scale(1.05);
+}
+
+/* BIGGER PROPERTY CARDS */
+.card {
+    background: rgba(255, 255, 255, 0.04) !important;
+    backdrop-filter: blur(12px);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: 0.4s ease;
+}
+
+/* IMAGE */
+.card img {
+    height: 230px;
+    object-fit: cover;
+}
+
+/* HOVER */
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+
+/* FILTER BAR */
+.form-control {
+    background: rgba(255, 255, 255, 0.08);
+    border: none;
+    color: #fff;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+}

@@ -1,0 +1,13 @@
+{
+  "name": "naijahomes",
+  "version": "1.0.0",
+  "description": "Premium Ibadan Real Estate Website",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve .",
+    "dev": "npx live-server --port=3000"
+  },
+  "keywords": ["real-estate", "ibadan", "nigeria"],
+  "author": "",
+  "license": "ISC"
+}
